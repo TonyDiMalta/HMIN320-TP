@@ -1,16 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp-firstpass.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SwordOwner.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\World.js">
     <Files>
-      <File FileName="Assets\Scripts\Follow.js" Line="10" Column="27" />
-      <File FileName="Assets\Scripts\Spawn.js" Line="13" Column="70" />
-      <File FileName="Assets\Scripts\SwordOwner.js" Line="23" Column="43" />
-      <File FileName="Assets\Scripts\Fall.js" Line="6" Column="10" />
-      <File FileName="Assets\Scripts\Stargate.js" Line="18" Column="62" />
-      <File FileName="Assets\Scripts\Pickup.js" Line="7" Column="41" />
-      <File FileName="Assets\Scripts\World.js" Line="11" Column="14" />
-      <File FileName="Assets\Scripts\Countdown.js" Line="25" Column="28" />
-      <File FileName="Assets\Scripts\GameVariables.js" Line="8" Column="105" />
+      <File FileName="Assets\Scripts\Follow.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spawn.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SwordOwner.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Fall.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Stargate.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Pickup.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\World.js" Line="26" Column="53" />
+      <File FileName="Assets\Scripts\Countdown.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameVariables.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
