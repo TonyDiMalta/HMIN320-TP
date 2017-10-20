@@ -48,7 +48,7 @@ Ajout d'un script de suivi à la caméra avec pour cible le 'BoxBoy'.
 ```
 Les objets ont bien le comportement attendu, ils réagissent à la physique (ils tombent ici car ils sont empilés avec de grands espacements).
 Ils sont également poussés par le personnage quand celui-ci s'en approche alors qu'il est déjà au contact de l'objet.
-Le script précédent nous permet d'appliquer les changements de notre choix à l'objet de notre choix tandis que le graphe de scène applique tous les changements du parent à ses enfants.
+Le script précédent nous permet d'appliquer les changements de notre choix à l'objet courant tandis que le graphe de scène applique tous les changements du parent à ses enfants.
 ```
 
 ## Partie 2
@@ -78,7 +78,7 @@ J'ai donc ajouté un booléen pour déterminer si l'épée avait changé de prop
 
 ### Les plateformes
 
-Ajout de plateformes pour attendre la plateforme du 'BoxBoy' ainsi que les limites du terrain (trop bas sur l'axe Y recharge le niveau - càd la scène).  
+Ajout de plateformes pour atteindre la plateforme du 'BoxBoy' et ajout des limites du terrain (si le personnage tombe du terrain, on recharge le niveau - c'est à dire la scène).  
 [Voir sc7](Screenshots/TP2_DiMalta-Tony_7.jpg)
 
 ```
@@ -88,8 +88,8 @@ Pour continuer de générer des météorites (les sphères rouge et noir) à l'i
 ### Stargate
 
 Ajout d'un changement de scène lorsqu'on s'approche suffisamment de la fontaine.  
-Pour le faire, j'ai décidé de reprendre le calcul de distance utilisé pour l'épée afin d'éviter d'ajouter un collider pour bénéfier du trigger.  
-L'ajout des scènes au build permet maintenant de se téléporter de notre première scène à la seconde en rentrant dans la fontaine.  
+Pour le faire, j'ai décidé de reprendre le calcul de distance utilisé pour l'épée afin d'éviter d'ajouter un collider pour bénéfier du trigger.
+L'ajout des scènes au build permet maintenant de se téléporter de notre première scène à la seconde en rentrant dans la fontaine.
 
 ## Partie 3
 
@@ -103,7 +103,7 @@ Ajout d'un texte pour informer le joueur du nombre de pièces récoltés en haut
 
 ### Timer
 
-Ajout d'un timer pour inciter le joueur à se dépêcher (le texte correspondant au timer apparait en haut à droite de l'écran de jeu).  
+Ajout d'un timer pour inciter le joueur à se dépêcher (le texte correspondant apparait en haut à droite de l'écran de jeu).  
 [Voir sc8](Screenshots/TP2_DiMalta-Tony_8.jpg)
 
 ### Dans la continuité du temps
@@ -116,9 +116,9 @@ Pour conserver ses informations, on a également besoin d'un canvas et d'un obje
 Lorsque le joueur a trouvé toutes les pièces, on lui indique en précisant 'MAX' avant le nombre de pièces récoltées.  
 Pour obliger le joueur à ramasser un certain nombre de pièces, on rajoute une condition au changement de scène (stargate).  
 Enfin, on ajoute des pièces factices qui retirent un point lorsque le joueur en ramasse une.  
-Pour les distinguer des vraies, j'ai changé leur couleur (material) ainsi que le pitch du son quelles font lorsqu'elles sont ramassées.  
+Pour les distinguer des vraies, j'ai changé leur 'material' ainsi que le pitch du son lorsqu'elles sont ramassées.  
 Pour des soucis de claretés, le texte "Coin" est remplacé par "Score".  
-Afin de permettre au joueur de changer de niveau même s'il ramasse toutes les pièces (vraies et fausses), le score requis est la différence des deux.  
+Afin de permettre au joueur de changer de niveau même s'il ramasse toutes les pièces (vraies et fausses), le score requis est la différence des deux (dans mon cas : score requis = 4 vraies - 2 fausses = 2).  
 [Voir sc9](Screenshots/TP2_DiMalta-Tony_9.jpg)
 
 ```
