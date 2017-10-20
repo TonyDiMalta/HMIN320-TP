@@ -117,7 +117,7 @@ Lorsque le joueur a trouvé toutes les pièces, on lui indique en précisant 'MA
 Pour obliger le joueur à ramasser un certain nombre de pièces, on rajoute une condition au changement de scène (stargate).  
 Enfin, on ajoute des pièces factices qui retirent un point lorsque le joueur en ramasse une.  
 Pour les distinguer des vraies, j'ai changé leur 'material' ainsi que le pitch du son lorsqu'elles sont ramassées.  
-Pour des soucis de claretés, le texte "Coin" est remplacé par "Score".  
+Dans un souci de clarté, le texte "Coin" est remplacé par "Score".  
 Afin de permettre au joueur de changer de niveau même s'il ramasse toutes les pièces (vraies et fausses), le score requis est la différence des deux (dans mon cas : score requis = 4 vraies - 2 fausses = 2).  
 [Voir sc9](Screenshots/TP2_DiMalta-Tony_9.jpg)
 
