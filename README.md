@@ -6,19 +6,19 @@ Master 2 IMAGINA - TP Unity
 
 ### Mise en situation
 
-Ajout du personnage 'BoxBoy' dans la scène sur une plateforme et d'un cube flottant au dessus de lui.
-Voir sc1.
+Ajout du personnage 'BoxBoy' dans la scène sur une plateforme et d'un cube flottant au dessus de lui.  
+[Voir sc1](Screenshots/TP2_DiMalta-Tony_1.jpg)
 
 ### Les matériaux
 
-Ajout d'un fond derrière le personnage et d'une texture à celui-ci ainsi qu'au cube flottant.
-Amélioration de l'éclairage du 'BoxBoy'.
-Voir sc2.
+Ajout d'un fond derrière le personnage et d'une texture à celui-ci ainsi qu'au cube flottant.  
+Amélioration de l'éclairage du 'BoxBoy'.  
+[Voir sc2](Screenshots/TP2_DiMalta-Tony_2.jpg)
 
 ### Et la lumière fut!
 
-Ajout d'une lumière de type PointLight pour éclairer un cube dans une boîte.
-Voir sc3.
+Ajout d'une lumière de type PointLight pour éclairer un cube dans une boîte.  
+[Voir sc3](Screenshots/TP2_DiMalta-Tony_3.jpg)
 
 ```
 Ce point du TP n'apporte rien à la scène et n'est plus utile par la suite.
@@ -42,8 +42,8 @@ Ajout de plusieurs cubes identiques au précédent, ceux-ci conservent ses carac
 
 ### Variables exposées
 
-Ajout d'un script de suivi à la caméra avec pour cible le 'BoxBoy'.
-Voir sc4.
+Ajout d'un script de suivi à la caméra avec pour cible le 'BoxBoy'.  
+[Voir sc4](Screenshots/TP2_DiMalta-Tony_4.jpg)
 
 ```
 Les objets ont bien le comportement attendu, ils réagissent à la physique (ils tombent ici car ils sont empilés avec de grands espacements).
@@ -55,10 +55,10 @@ Le script précédent nous permet d'appliquer les changements de notre choix à 
 
 ### Le third person character
 
-Ajout du ThirdPersonCharacter des assets stantards dans la scène.
-Ajout d'une sphère qui jouera le rôle d'obstacle au personnage pour attendre l'épée du 'BoxBoy'.
-La sphère est combinée à un PhysicsMaterial pour ajouter des rebondissements et la rendre plus dangereuse.
-Voir sc5.
+Ajout du ThirdPersonCharacter des assets stantards dans la scène.  
+Ajout d'une sphère qui jouera le rôle d'obstacle au personnage pour attendre l'épée du 'BoxBoy'.  
+La sphère est combinée à un PhysicsMaterial pour ajouter des rebondissements et la rendre plus dangereuse.  
+[Voir sc5](Screenshots/TP2_DiMalta-Tony_5.jpg)
 
 ```
 Je trouve la génération d'objets mal organisée, j'ai donc désigné GameObjectControl comme parent des sphères.
@@ -66,8 +66,8 @@ Je trouve la génération d'objets mal organisée, j'ai donc désigné GameObjec
 
 ### L'épée
 
-Ajout d'un script pour récupérer l'épée du 'BoxBoy' en étant suffisamment proche.
-Voir sc6.
+Ajout d'un script pour récupérer l'épée du 'BoxBoy' en étant suffisamment proche.  
+[Voir sc6](Screenshots/TP2_DiMalta-Tony_6.jpg)
 
 ```
 Le script déclenche une erreur sur Unity, il manque la ligne de déclaration de la variable player.
@@ -78,8 +78,8 @@ J'ai donc ajouté un booléen pour déterminer si l'épée avait changé de prop
 
 ### Les plateformes
 
-Ajout de plateformes pour attendre la plateforme du 'BoxBoy' ainsi que les limites du terrain (trop bas sur l'axe Y recharge le niveau - càd la scène).
-Voir sc7.
+Ajout de plateformes pour attendre la plateforme du 'BoxBoy' ainsi que les limites du terrain (trop bas sur l'axe Y recharge le niveau - càd la scène).  
+[Voir sc7](Screenshots/TP2_DiMalta-Tony_7.jpg)
 
 ```
 Pour continuer de générer des météorites (les sphères rouge et noir) à l'infini, j'ai préféré utiliser une fonction "InvokeRepeating" et détruire les objets (sauf le player) qui sortent des limites du terrain.
@@ -87,9 +87,9 @@ Pour continuer de générer des météorites (les sphères rouge et noir) à l'i
 
 ### Stargate
 
-Ajout d'un changement de scène lorsqu'on s'approche suffisamment de la fontaine.
-Pour le faire, j'ai décidé de reprendre le calcul de distance utilisé pour l'épée afin d'éviter d'ajouter un collider pour bénéfier du trigger.
-L'ajout des scènes au build permet maintenant de se téléporter de notre première scène à la seconde en rentrant dans la fontaine.
+Ajout d'un changement de scène lorsqu'on s'approche suffisamment de la fontaine.  
+Pour le faire, j'ai décidé de reprendre le calcul de distance utilisé pour l'épée afin d'éviter d'ajouter un collider pour bénéfier du trigger.  
+L'ajout des scènes au build permet maintenant de se téléporter de notre première scène à la seconde en rentrant dans la fontaine.  
 
 ## Partie 3
 
@@ -103,23 +103,23 @@ Ajout d'un texte pour informer le joueur du nombre de pièces récoltés en haut
 
 ### Timer
 
-Ajout d'un timer pour inciter le joueur à se dépêcher (le texte correspondant au timer apparait en haut à droite de l'écran de jeu).
-Voir sc8.
+Ajout d'un timer pour inciter le joueur à se dépêcher (le texte correspondant au timer apparait en haut à droite de l'écran de jeu).  
+[Voir sc8](Screenshots/TP2_DiMalta-Tony_8.jpg)
 
 ### Dans la continuité du temps
 
-Ajout de variables statiques pour conserver le score ainsi que le temps de jeu restant dans la deuxième scène.
+Ajout de variables statiques pour conserver le score ainsi que le temps de jeu restant dans la deuxième scène.  
 Pour conserver ses informations, on a également besoin d'un canvas et d'un objet 'world' dans la scène intérieure.
 
 ### Bonus
 
-Lorsque le joueur a trouvé toutes les pièces, on lui indique en précisant 'MAX' avant le nombre de pièces récoltées.
-Pour obliger le joueur à ramasser un certain nombre de pièces, on rajoute une condition au changement de scène (stargate).
-Enfin, on ajoute des pièces factices qui retirent un point lorsque le joueur en ramasse une.
-Pour les distinguer des vraies, j'ai changé leur couleur (material) ainsi que le pitch du son quelles font lorsqu'elles sont ramassées.
-Pour des soucis de claretés, le texte "Coin" est remplacé par "Score".
-Afin de permettre au joueur de changer de niveau même s'il ramasse toutes les pièces (vraies et fausses), le score requis est la différence des deux.
-Voir sc9.
+Lorsque le joueur a trouvé toutes les pièces, on lui indique en précisant 'MAX' avant le nombre de pièces récoltées.  
+Pour obliger le joueur à ramasser un certain nombre de pièces, on rajoute une condition au changement de scène (stargate).  
+Enfin, on ajoute des pièces factices qui retirent un point lorsque le joueur en ramasse une.  
+Pour les distinguer des vraies, j'ai changé leur couleur (material) ainsi que le pitch du son quelles font lorsqu'elles sont ramassées.  
+Pour des soucis de claretés, le texte "Coin" est remplacé par "Score".  
+Afin de permettre au joueur de changer de niveau même s'il ramasse toutes les pièces (vraies et fausses), le score requis est la différence des deux.  
+[Voir sc9](Screenshots/TP2_DiMalta-Tony_9.jpg)
 
 ```
 Ces manipulations permettent de se familiariser pas à pas avec Unity, cependant la partie sur 'PointLight' n'est pas vraiment nécessaire.
