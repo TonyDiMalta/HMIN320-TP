@@ -127,3 +127,21 @@ La version finale manque de feedbacks pour le joueur qui ne sait pas ou aller, q
 Il faudrait ajouter un menu de départ avec les touches, l'objectif, ainsi que des indications en jeu concernant les actions à réaliser.
 Exemple : ajout d'un message indiquant le nombre de pièces requises au début de la partie, ainsi qu'un message rappelant ce nombre lorsqu'on entre dans la fontaine trop tôt.
 ```
+
+## Walkthrough
+
+### Premier niveau
+
+1) Ramassez suffisamment de pièces pour passer au niveau suivant.  
+Mais attention! Certains pièces sont fausses et ne doivent pas être ramassées!  
+2) Une fois que vous avez récolté un minimum de 2 pièces, sautez dans la fontaine.
+
+### Deuxième niveau
+
+1) Sautez sur les plateformes pour atteindre la plateforme principale.  
+2) Traversez la plateforme en évitant les météorites.  
+3) Approchez-vous suffisamment pour voler l'épée du Boss.
+
+### Niveau bonus
+
+Indice : Poussez les blocs dans le vide et approchez-vous du mur.
